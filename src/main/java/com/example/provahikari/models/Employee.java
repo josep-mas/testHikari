@@ -17,12 +17,22 @@ public class Employee {
 
     private LocalDateTime birthDate;
 
+    private String nickname;
+
+    private String nif;
+
     public Employee() {
     }
 
     public Employee( String name, LocalDateTime birthDate ) {
         this.name = name;
         this.birthDate = birthDate;
+    }
+
+    public Employee( String name, String nickname, String nif ) {
+        this.name = name;
+        this.nickname = nickname;
+        this.nif = nif;
     }
 
     public Long getId() {
@@ -47,6 +57,22 @@ public class Employee {
 
     public void setBirthDate( LocalDateTime birthDate ) {
         this.birthDate = birthDate;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname( String nickname ) {
+        this.nickname = nickname;
+    }
+
+    public String getNif() {
+        return nif;
+    }
+
+    public void setNif( String nif ) {
+        this.nif = nif;
     }
 
     @Override
